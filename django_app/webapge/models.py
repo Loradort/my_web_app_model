@@ -8,6 +8,7 @@ prefix_choices = (
 
 
 class Student(models.Model):
+    
     std_id = models.IntegerField()
     prefix = models.IntegerField(choices=prefix_choices, default=1)
     name = models.CharField(max_length=255)
