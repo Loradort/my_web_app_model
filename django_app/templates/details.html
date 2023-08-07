@@ -5,29 +5,33 @@
 {% block content %} 
 {{ message }}
 <table class="table">
+  <!---->
+  {{ message }}
     <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">ID</th>
-        <th scope="col">Prefix</th>
-        <th scope="col">Name</th>
-        <th scope="col">Lastname</th>
-        <th scope="col">Phone</th>
-        <th scope="col">Address</th>
-      </tr>
-    </thead>
-    <tbody>
         <tr>
-        <th scope="row">1</th>
-        <td>ID</td>
-        <td>Prefix</td>
-        <td>Name</td>
-        <td>Lastname</td>
-        <td>Phone</td>
-        <td>Address</td>
-      </tr>
-    </tbody>
-  </table>
- {% endblock content %}
+          <th scope="col">#</th>
+          <th scope="col">ID  </th>
+          <th scope="col">Prefix</th>
+          <th scope="col">Name</th>
+          <th scope="col">Lastname</th>
+          <th scope="col">Phone</th>
+          <th scope="col">Address</th>
+        </tr>
+      </thead>
+      <tbody>
+  
+        <tr>
+          <td >1</td>
+          <td>{{ student.std_id }}</td>
+          <td>{{ student.prefix_str }}</td>
+          <td>{{ student.name }}</td>
+          <td>{{ student.lastname }}</td>
+          <td>{{ student.phone }}</td>
+          <td>{{ student.address }}</td>
+        </tr>
+  
+  
+      </tbody>
+</table> {% endblock content %}
  
 {% comment %}  {{  }} ---> ทำการพิมพ์คำว่า variable แล้วจะได้  {% endcomment %}
